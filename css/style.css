@@ -1,0 +1,50 @@
+
+
+.main_body {
+
+}
+
+.page {
+
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #3aff8d;
+
+    width: 100%;
+    height: 2000px;
+
+}
+
+.title_section {
+
+    /*background-color: #fff522;*/
+
+    width: 100%;
+    height: 1010px;
+
+}
+
+.title_text {
+
+    font-size: 55px;
+    text-align: center;
+    padding: 25px 0 25px 0px;
+
+}
+
+.title_description {
+
+    text-align: center;
+    margin-top: 310px;
+    padding: 25px 0 25px 0px;
+
+}
+
+.other_description {
+    text-align: center;
+    padding: 25px 0 25px 0px;
+}
