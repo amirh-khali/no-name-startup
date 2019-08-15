@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="beb89e16-51e8-4698-aed6-1881e686fe4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service-Registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Service-Registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,13 +28,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Telegram Desktop/computer-site" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/css/img" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css/img" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -60,6 +63,7 @@
       <updated>1565656110426</updated>
       <workItem from="1565656111745" duration="490000" />
       <workItem from="1565853742370" duration="353000" />
+      <workItem from="1565862921109" duration="10925000" />
     </task>
     <servers />
   </component>
