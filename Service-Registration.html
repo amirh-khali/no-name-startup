@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" >
 <head>
 
     <meta charset="UTF-8">
@@ -11,9 +11,14 @@
 </head>
 <body>
 
-<div class="page">
+<section class="form_section">
 
-    <section class="form_section">
+                <div class="form-header">
+                    <a href="index.html" title="صفحه اصلی">خانه</a>
+                </div>
+
+
+<!--    <section class="form_section">-->
 
             <form class="form">
 
@@ -22,59 +27,65 @@
                     <div class="form-collapse" style="margin-top: 10px">
 
                         <select class="form-collapse-select">
-                            <option>کشور را انتخاب کنید</option>
-                            <option>فرانسه</option>
-                            <option>اوکراین</option>
-                            <option>آمریکا</option>
+                            <option>نمونه ۱</option>
+                            <option>نمونه ۲</option>
+                            <option>نمونه ۳</option>
+                            <option>نمونه ۴</option>
                         </select>
                     </div>
 
                     <div class="form-collapse">
 
-                        <div class="form-collapse-title">نام</div>
+                        <label class="form-collapse-title">نام</label>
 
-                        <input placeholder="نام" class="form-control" type="text">
-
-                    </div>
-
-                    <div class="form-collapse">
-
-                        <div class="form-collapse-title">نام خانوادگی</div>
-
-                        <input placeholder="نام خانوادگی" class="form-control" type="text">
+                        <input placeholder="مثال : محمد" class="form-control" type="text">
 
                     </div>
 
                     <div class="form-collapse">
 
-                        <div class="form-collapse-title">ایمیل</div>
+                        <label class="form-collapse-title">نام خانوادگی</label>
 
-                        <input placeholder="ایمیل" class="form-control" type="text">
+                        <input placeholder="مثال : محمدی" class="form-control" type="text">
 
                     </div>
 
                     <div class="form-collapse">
 
-                        <div class="form-collapse-title">شماره همراه</div>
+                        <label class="form-collapse-title">ایمیل</label>
 
-                        <input placeholder="شماره همراه" class="form-control" type="text">
+                        <input placeholder="name@example.com" class="form-control" type="email">
+
+                    </div>
+
+                    <div class="form-collapse">
+
+                        <label class="form-collapse-title">شماره همراه</label>
+
+                        <input placeholder="09XXXXXXXXX" class="form-control" type="text">
 
                     </div>
 
 
                     <div class="form-collapse">
 
-                        <div class="form-collapse-title">توضیحات</div>
+                        <label class="form-collapse-title">توضیحات</label>
 
                         <textarea placeholder="توضیحات" class="form-textarea" type="text"> </textarea>
 
                     </div>
 
+                    <div class="form-collapse" style="align-items: center">
+
+                        <input class="form-submit" type="submit" value="ثبت نام">
+
+                    </div>
+
             </form>
 
-    </section>
+<!--    </section>-->
 
-</div>
+</section>
 
 </body>
 </html>

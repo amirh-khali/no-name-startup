@@ -155,35 +155,59 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |
 |*/
 
+a {
+    color: white;
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+    text-decoration-style: initial !important;
+    text-decoration-color: initial !important;
+}
+
+.form-header {
+
+    direction: rtl;
+    margin-right: 200px;
+    margin-top: 12px;
+    color: white;
+}
+
 .form_section {
 
     background-image: url("img/2photoshop.jpg");
     background-size: cover;
     display: flow-root;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 1010px;
 
+}
+
+.form {
+
+    direction: rtl;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*width: 350px;*/
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 30px;
+    padding: 15px 20px 30px 20px;
+    background-color: rgba(000,000,000,0.5);
+    border-radius: 15px;
 }
 
 .form-title {
 
     padding: 8px;
 
-    text-align: right;
+    /*text-align: right;*/
     /*text-transform: uppercase;*/
     font-size: 26px;
     font-weight: 600;
-    color: hotpink;
-
-}
-
-.form {
-    margin-left: 33%;
-    margin-right: 33%;
-    margin-top: 80px;
-    padding: 15px 20px 30px 20px;
-    background-color: rgba(000,000,000,0.5);
-    border-radius: 15px;
+    color: dodgerblue;
+    transition: .25s ease;
 }
 
 .form-collapse {
@@ -194,19 +218,19 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 
 .form-collapse-title {
     padding: 5px;
-
     text-align: right;
     /*text-transform: uppercase;*/
     font-size: 15px;
     font-weight: 600;
-    color: hotpink;
+    color: dodgerblue;
 }
 
 .form-control {
-    text-align: right;
+    margin-top: 8px;
+    text-align: center;
     height: 28px;
-    width: 90%;
-    padding: 6px 12px;
+    width: 100%;
+    padding: 6px 0px;
     font-size: 12px;
     line-height: 1;
     color: #555;
@@ -217,10 +241,10 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 }
 
 .form-collapse-select {
-    text-align: right;
+    /*text-align: right;*/
     height: 42px;
-    width: 90%;
-    padding: 6px 12px;
+    width: 100%;
+    padding: 0px 0px;
     font-size: 12px;
     line-height: 1;
     color: #555;
@@ -231,15 +255,27 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 }
 
 .form-textarea {
-    text-align: right;
+    /*text-align: right;*/
+    margin-top: 8px;
     height: 100px;
-    width: 90%;
-    padding: 6px 12px;
+    width: 100%;
+    padding: 0px 0px;
     font-size: 15px;
     line-height: 1.5;
     color: #555;
     background-color: #fff;
     border: 1px solid #ccc;
+    border-radius: 7px;
+    box-shadow: black 0px 4px 12px 1px;
+}
+
+.form-submit {
+    align-items: center;
+    height: 34px;
+    width: 100%;
+    color: white;
+    background-color: #337ab7;
+    border: 1px solid #337ab7;
     border-radius: 7px;
     box-shadow: black 0px 4px 12px 1px;
 }
