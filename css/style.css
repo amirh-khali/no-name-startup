@@ -1,11 +1,8 @@
-
 /*
 =======================================================
 NOTICE: bache ha code block e khodetoono berinin toosh
 =======================================================
 */
-
-
 
 /*
 |--------------------------------------------------------------------------
@@ -16,15 +13,12 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |
 |*/
 
-
 /*
 |--------------------------------------------------------------------------
 | MAG CSS CODE !
 |--------------------------------------------------------------------------
 |
 |*/
-
-
 
 /*
 |--------------------------------------------------------------------------
@@ -34,37 +28,34 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |*/
 
 .main_body {
-
 }
 
 .page {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #3aff8d;
-    width: 100%;
-    height: 2000px;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #3aff8d;
+  width: 100%;
+  height: 2000px;
 }
 
 .title_section {
-    display: flow-root;
-    width: 100%;
-    height: 1010px;
+  display: flow-root;
+  width: 100%;
+  height: 100vh;
 }
 
 .title_text {
-    font-size: 55px;
-    text-align: center;
-    padding: 25px 0 25px 0px;
+  font-size: 55px;
+  text-align: center;
+  padding: 25px 0 25px 0px;
 }
 
 .title_description {
-    text-align: center;
-    margin-top: 310px;
-    padding: 25px 0 25px 0px;
+  text-align: center;
+  margin-top: 310px;
+  padding: 25px 0 25px 0px;
 }
-
 
 /*
 |--------------------------------------------------------------------------
@@ -75,7 +66,6 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |
 |*/
 
-
 /*
 |--------------------------------------------------------------------------
 | Header Code (MAMMAD !)
@@ -84,16 +74,12 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |*/
 
 .header {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 80px;
-    background-color: aquamarine;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: aquamarine;
 }
-
-
-
-
 
 /*
 |--------------------------------------------------------------------------
@@ -104,8 +90,6 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |
 |*/
 
-
-
 /*
 |--------------------------------------------------------------------------
 | Rmin Css Code
@@ -113,14 +97,41 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |
 |*/
 
-
 /*
 |--------------------------------------------------------------------------
 | Ali Css Code
 |--------------------------------------------------------------------------
 |
 |*/
+.home_sectoin {
+  display: flow-root;
+  width: 100%;
+  height: 100vh;
+}
 
+.content {
+  font-family: 'Gandom';
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  position: absolute;
+  vertical-align: text-bottom;
+  background: rgba(0, 0, 0, 0.3);
+  color: #f1f1f1;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+#myVideo {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -129,14 +140,12 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |
 |*/
 
-
 /*
 |--------------------------------------------------------------------------
 | MaMMAD Css Code
 |--------------------------------------------------------------------------
 |
 |*/
-
 
 /*
 |--------------------------------------------------------------------------
@@ -147,10 +156,9 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |
 |*/
 
-
 /*
 |--------------------------------------------------------------------------
-| AmirH Css Code
+| ALI_ALFA Css Code
 |--------------------------------------------------------------------------
 |
 |*/
@@ -295,4 +303,3 @@ a {
 |--------------------------------------------------------------------------
 |
 |*/
-
