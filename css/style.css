@@ -104,6 +104,54 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |
 |*/
 
+.container {
+    margin: 0 2%;
+    padding: 0 2%;
+    height: border-box;
+    position: inherit;
+}
+
+.list-icon {
+    text-align: center;
+    list-style-type: none;
+    padding: 0 1%;
+    display: block;
+}
+
+.tab-icon {
+    text-decoration: none;
+    font-family: Dosis, arial, sans-serif;
+    width: 8%;
+    min-width: 120px;
+    height: inherit;
+    padding: 10px 30px;
+    display: grid;
+}
+
+.service-tab {
+    display: inline-block;
+}
+
+.service-text {
+    width: 92%;
+    font-family: Dosis, Arial, sans-serif;
+    font-size: 23px;
+    line-height: 35px;
+    letter-spacing: 2px;
+}
+
+.icon-style {
+    margin: auto;
+    width: 100%;
+    font-size: 90px;
+}
+
+
+.list-icon > li {
+    display: flex;
+    font-size: 20px;
+}
+
 /*
 |--------------------------------------------------------------------------
 | Ali Css Code
