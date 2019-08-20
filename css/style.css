@@ -12,7 +12,14 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |--------------------------------------------------------------------------
 |
 |*/
-
+@font-face {
+    font-family: 'Gandom';
+    src: url('http://fonts.codearena.ir/rastikerdar/gandom/gandom.eot');
+    src: url('http://fonts.codearena.ir/rastikerdar/gandom/gandom.eot?#iefix') format('embedded-opentype'),
+    url('http://fonts.codearena.ir/rastikerdar/gandom/gandom.woff') format('woff'),
+    url('http://fonts.codearena.ir/rastikerdar/gandom/gandom.ttf') format('truetype');
+    font-weight: normal;
+}
 /*
 |--------------------------------------------------------------------------
 | MAG CSS CODE !
