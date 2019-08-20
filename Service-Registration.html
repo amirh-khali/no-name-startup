@@ -4,6 +4,7 @@
 
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Title</title>
 
     <!--MAG-->
@@ -12,74 +13,39 @@
 <body>
 
     <section class="form_section">
-
         <div class="form-header">
             <a href="index.html" title="صفحه اصلی">خانه</a>
         </div>
-
         <form class="form">
-
-            <div class="form-title">ثبــت سفـــارش</div>
-
-            <div class="form-collapse" style="margin-top: 10px">
-
-                <select class="form-collapse-select">
+            <label class="form-title">ثبت سفارش</label>
+            <div class="form-collapse box" style="margin-top: 10px">
+                <select class="form-control form-select">
                     <option>نمونه ۱</option>
                     <option>نمونه ۲</option>
                     <option>نمونه ۳</option>
                     <option>نمونه ۴</option>
                 </select>
             </div>
-
             <div class="form-collapse">
-
-<!--                <label class="form-collapse-title">نام</label>-->
-
-                <input placeholder="نام" class="form-control" type="text">
-
+                <input placeholder="نام" class="form-control form-collapse-block" type="text">
             </div>
-
             <div class="form-collapse">
-
-<!--                <label class="form-collapse-title">نام خانوادگی</label>-->
-
-                <input placeholder="نام خانوادگی" class="form-control" type="text">
-
+                <input placeholder="نام خانوادگی" class="form-control form-collapse-block" type="text">
             </div>
-
             <div class="form-collapse">
-
-<!--                <label class="form-collapse-title">ایمیل</label>-->
-
-                <input placeholder="ایمیل" class="form-control" type="email">
-
+                <input placeholder="ایمیل" class="form-control form-collapse-block" type="email">
             </div>
-
             <div class="form-collapse">
-
-<!--                <label class="form-collapse-title">شماره همراه</label>-->
-
-                <input placeholder="شماره همراه" class="form-control" type="text">
-
+                <input placeholder="شماره همراه" class="form-control form-collapse-block" type="text">
             </div>
-
-
             <div class="form-collapse">
-
-                <label class="form-collapse-title">توضیحات</label>
-
-                <textarea placeholder="توضیحات" class="form-textarea" type="text"> </textarea>
-
+                <div class=" fas fa-pen" style="padding: 5px; "><label class="form-collapse-title">توضیحات</label></div>
+                <textarea class="form-control form-textarea" type="text"></textarea>
             </div>
-
             <div class="form-collapse" style="align-items: center">
-
                 <input class="form-submit" type="submit" value="ثبت نام">
-
             </div>
-
         </form>
-
     </section>
 
 </body>
