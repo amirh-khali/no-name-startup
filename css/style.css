@@ -243,7 +243,7 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 
 }
 
-div, p, label, input  {
+div, p, label, input, select  {
     font-family: 'Gandom';
 }
 
@@ -381,10 +381,10 @@ div, p, label, input  {
 
 .form-header {
     direction: rtl;
-    
+
     margin-right: 200px;
     margin-top: 12px;
-    
+
     color: white;
 }
 .form-header a {
@@ -401,7 +401,6 @@ div, p, label, input  {
 }
 
 .form_section {
-    display: flow-root;
     position: absolute;
     top: 0;
     left: 0;
