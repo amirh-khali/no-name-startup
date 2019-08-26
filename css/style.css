@@ -12,6 +12,7 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |--------------------------------------------------------------------------
 |
 |*/
+
 @font-face {
     font-family: 'Gandom';
     src: url('http://fonts.codearena.ir/rastikerdar/gandom/gandom.eot');
@@ -20,6 +21,8 @@ NOTICE: bache ha code block e khodetoono berinin toosh
     url('http://fonts.codearena.ir/rastikerdar/gandom/gandom.ttf') format('truetype');
     font-weight: normal;
 }
+
+
 /*
 |--------------------------------------------------------------------------
 | MAG CSS CODE !
@@ -98,7 +101,7 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 }
 .logo_span {
     float: left;
-    width: 12%;
+    /*width: 12%;*/
 }
 .nav_bar {
     margin-right: 10px;
@@ -166,25 +169,57 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |--------------------------------------------------------------------------
 |
 |*/
+.flip {
+
+    transform: rotate(-180deg);
+    /*-moz-transition: transform 1s;*/
+    /*-webkit-transition: transform 1s;*/
+    transition: transform 1s;
+}
+.button{
+    background: url('img/dropdown.png') ;
+    background-size: cover;
+    width: 20px ;
+    height: 20px;
+    border: none ;
+    float: left;
+    margin-left: 10px;
+}
+#button{
+    transform: rotate(-180deg);
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
+}
 .aboutUs_Title{
     font-size: 30px;
     text-align: right;
     padding: 20px 20px 20px 20px;
     color: darkgray;
 }
-.aboutUs_Text{
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10px;
-    padding: 20px 20px 20px 20px;
-    width: 25%;
-    color: black;
-
+/*.aboutUs_Text{*/
+    /*font-size: 20px;*/
+    /*text-align: center;*/
+    /*margin-top: 10px;*/
+    /*padding: 20px 20px 20px 20px;*/
+    /*width: 100%;*/
+    /*color: black;*/
+/*}*/
+.aboutUs_Textimg{
+    text-align: right;
+    margin-top: 20px;
+    /*padding: 20px 20px 20px 20px;*/
+    /*width: 350px !important;*/
+    width: 100%;
+    justify-content: center;
+    display: inline-flex;
+    max-width: 350px;
 
 }
-
 .flex-container {
-    display: flex;
+    float: left;
+    width: 100%;
+    /*display: flex;*/
+    margin-right: 25px;
     justify-content: center;
 }
 
@@ -192,17 +227,21 @@ NOTICE: bache ha code block e khodetoono berinin toosh
     background-image: url("img/2photoshop.jpg");
     background-size: cover  ;
     width: 100%;
-    height: 1010px;
     background-attachment: fixed;
 }
-.about_company{
-    font-size: 20px;
-    text-align: right;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    color: black;
-
+/*.about_company{*/
+    /*font-size: 20px;*/
+    /*text-align: center;*/
+    /*display: flex;*/
+    /*width: 100%;*/
+    /*justify-content: center;*/
+    /*color: black;*/
+    /*padding: 15px 85px 0px 85px;*/
+/*}*/
+.aboutus_content{
+    margin-top: 15px;
+    display: none;
+    padding: 20px;
 }
 .members{
     display: flow-root;
@@ -269,9 +308,11 @@ div, p, label, input  {
     font-size: 12px;
     color: darkgray;
     text-align: center;
-    margin: 5px;
+    margin: 13px;
     padding: 5px;
-    width: 15%;
+    float: right;
+    width: 196px;
+
 }
 .member_aboutus{
     display: flow-root;
@@ -289,20 +330,20 @@ div, p, label, input  {
 .title_section2 {
     display: flow-root;
     width: 100%;
-    height: 300px;
+    height: 250px;
 }
 .title_description2 {
-    text-align: right;
+    text-align: center;
     margin-top:  0px;
     padding: 25px 0 25px 0px;
 }
 .footer-text{
-    text-align: right;
-    margin-top: 30px;
-    margin-right:60px;
+    text-align: center;
+    /*margin-top: 10px;*/
+    /*margin-right:60px;*/
     font-family: "Gandom";
     color: darkgray;
-    font-size: 18px;
+    font-size: 12px;
     direction: rtl;
 
 }
@@ -316,7 +357,6 @@ div, p, label, input  {
 }
 .fa-instagram:hover{
     color:red;
-    font-size:50px;
 
 
 }
@@ -331,7 +371,6 @@ div, p, label, input  {
 }
 .fa-telegram:hover{
     color:cornflowerblue;
-    font-size:50px;
 
 
 }
@@ -345,7 +384,6 @@ div, p, label, input  {
 }
 .fa-twitter:hover{
     color:royalblue;
-    font-size:50px;
 
 
 }
@@ -359,9 +397,6 @@ div, p, label, input  {
 }
 .fa-linkedin:hover{
     color:blue;
-    font-size:50px;
-
-
 }
 /*
 |--------------------------------------------------------------------------
@@ -533,3 +568,54 @@ div, p, label, input  {
 |--------------------------------------------------------------------------
 |
 |*/
+
+
+/*
+|--------------------------------------------------------------------------
+| *************************************************************************
+|                         Responsive Css Code
+| *************************************************************************
+|--------------------------------------------------------------------------
+|
+|*/
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .aboutUs_Text{
+        font-size: 12px;
+    }
+    .about_company{
+        padding: 0px;
+        font-size: 12px;
+    }
+    .comp_img{
+        width: 240px;
+        height: 160px;
+    }
+
+}
+@media screen and (min-width: 450px) {
+    .aboutUs_Text{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        padding: 20px 20px 20px 20px;
+        width: 100%;
+        color: black;
+    }
+    .about_company{
+        padding: 15px 85px 0px 85px;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        color: black;
+    }
+    .comp_img{
+        width: 450px;
+        height: 350px;
+        margin-right: 10px;
+    }
+}
+
+
