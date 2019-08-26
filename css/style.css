@@ -87,9 +87,10 @@ NOTICE: bache ha code block e khodetoono berinin toosh
     position: fixed;
     top: 0px;
     width: 100%;
-    background-color: black;
-    padding: 6px;
+    background: transparent;
+    padding: 25px;
     z-index: 1;
+    transition: padding 0.7s, background 0.7s;
 }
 
 .bar{
@@ -152,7 +153,7 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 
 .container {
     margin: 10px 0;
-    padding: 10px 0;
+    padding: 10px 0 80px 0;
     width: 90%;
     height: border-box;
     position: inherit;
@@ -160,7 +161,6 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 }
 
 .arrow-icon {
-    width: 60%;
     height: 20%;
     margin: auto;
 }
