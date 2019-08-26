@@ -367,10 +367,13 @@ NOTICE: bache ha code block e khodetoono berinin toosh
     box-sizing: border-box;
 }
 
-/*.members_containers {*/
-/*height: auto;*/
-
-/*}*/
+.members_containers {
+    float: left;
+    width: 100%;
+    /*display: flex;*/
+    margin-right: 25px;
+    justify-content: center;
+}
 
 .img_container_img {
     /*display: flex;*/
@@ -421,6 +424,7 @@ div, p, label, input, select {
     transform: scale(1.05);
 }
 
+
 .members_text {
     font-size: 12px;
     color: darkgray;
@@ -435,8 +439,14 @@ div, p, label, input, select {
 .member_aboutus {
     display: flow-root;
     width: 100%;
-    padding: 70px;
+    padding: 10px;
     height: auto;
+}
+
+.whyus{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
 }
 
 /*
