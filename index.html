@@ -1,391 +1,399 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <title>Title</title>
     <style>
-      html {
-        scroll-behavior: smooth;
-      }
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="https://kit.fontawesome.com/8841a9458a.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-      $(document).ready(function() {
-        $("#aboutUs_Text_button1").click(function() {
-          $("#aboutUs_Text_content1").slideToggle("slow");
-          $("#aboutUs_Text_button1").toggleClass("flip");
+        $(document).ready(function () {
+            $("#aboutUs_Text_button1").click(function () {
+                $("#aboutUs_Text_content1").slideToggle("slow");
+                $("#aboutUs_Text_button1").toggleClass("flip");
+            });
         });
-      });
 
-      $(document).ready(function() {
-        $("#aboutUs_Text_button2").click(function() {
-          $("#aboutUs_Text_content2").slideToggle("slow");
-          $("#aboutUs_Text_button2").toggleClass("flip");
+        $(document).ready(function () {
+            $("#aboutUs_Text_button2").click(function () {
+                $("#aboutUs_Text_content2").slideToggle("slow");
+                $("#aboutUs_Text_button2").toggleClass("flip");
+            });
         });
-      });
-      $(document).ready(function() {
-        $("#aboutUs_Text_button3").click(function() {
-          $("#aboutUs_Text_content3").slideToggle("slow");
-          $("#aboutUs_Text_button3").toggleClass("flip");
+        $(document).ready(function () {
+            $("#aboutUs_Text_button3").click(function () {
+                $("#aboutUs_Text_content3").slideToggle("slow");
+                $("#aboutUs_Text_button3").toggleClass("flip");
+            });
         });
-      });
     </script>
 
     <!--MAG-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body class="main_body" onscroll="ChangeBackgroundColor()">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+</head>
+<body class="main_body" onscroll="ChangeBackgroundColor()">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-      AOS.init({
+<script>
+    AOS.init({
         easing: "ease-out-back"
-      });
-    </script>
+    });
+</script>
 
-    <div class="page" style="background: white">
-      <div class="header" id="Hook">
+<div class="page" style="background: white">
+    <div class="header" id="Hook">
         <span class="logo_span">
           <a
-            href="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwicpeOA3ITkAhUmsKQKHQozDnsQjRx6BAgBEAQ&url=http%3A%2F%2Frhythm.bestlooker.pro%2Fspecial-construction-1-contact.html&psig=AOvVaw0qeRajo68up_9NIOvIXXAU&ust=1565953076332992"
-            target="newtab"
-            ><img src="css/img/logo.png" alt="logo" width="70" height="20"
+                  href="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwicpeOA3ITkAhUmsKQKHQozDnsQjRx6BAgBEAQ&url=http%3A%2F%2Frhythm.bestlooker.pro%2Fspecial-construction-1-contact.html&psig=AOvVaw0qeRajo68up_9NIOvIXXAU&ust=1565953076332992"
+                  target="newtab"
+          ><img src="css/img/logo.png" alt="logo" width="70" height="20"
           /></a>
         </span>
 
         <nav class="nav_bar">
-          <a href="#Title" class="bar"> Home</a>
-          <a href="#Service" class="bar"> Services</a>
-          <a href="#About" class="bar"> About</a>
-          <a href="#Contact" class="bar"> Contact</a>
+            <a href="#Title" class="bar"> Home</a>
+            <a href="#Service" class="bar"> Services</a>
+            <a href="#About" class="bar"> About</a>
+            <a href="#Contact" class="bar"> Contact</a>
         </nav>
-      </div>
+    </div>
 
-      <section
-        class="home_sectoin"
-        id="Title"
-        style="background-color: #000000;"
-      >
+    <section
+            class="home_sectoin"
+            id="Title"
+            style="background-color: #000000;"
+    >
         <!--Eshqam ali Joon-->
 
         <video autoplay muted loop id="myVideo">
-          <source src="./videos/video_background.mp4" type="video/mp4" />
+            <source src="./videos/video_background.mp4" type="video/mp4"/>
         </video>
 
         <div class="content">
-          <h1>Space</h1>
+            <h1>Space</h1>
         </div>
-      </section>
+    </section>
 
-      <section
-        class="service-section"
-        id="Service"
-        style="background-color: #ffffff;"
-      >
-        <div class="title_text">Services</div>
+    <section class="service-section" id="Service" style="background-color: #ffffff;">
+
+        <a class="prev" onclick="plusSlide(-1)">
+            <div class="arrow-icon">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </a>
+
 
         <div class="container">
-          <a class="prev" onclick="plusSlide(-1)">
-            <i class="fas fa-chevron-right"></i>
-          </a>
-          <!-----------------------Development--------------------------->
-          <div class="slider fade">
-            <div class="tab-icon">
-              <i class="fas fa-code icon-style"></i>
-              Development
+            <div class="title_text">Services</div>
+            <!-----------------------Development--------------------------->
+            <div class="slider fade">
+                <div class="tab-icon">
+                    <i class="fas fa-code icon-style"></i>
+                    Development
+                </div>
+                <div class="service-text">
+                    <p>
+                    </p>
+                </div>
             </div>
-            <div class="service-text">
-              <p></p>
+            <!-----------------------Branding--------------------------->
+            <div class="slider fade">
+                <div class="tab-icon">
+                    <i class="fas fa-infinity icon-style"></i>
+                    Branding
+                </div>
+                <div class="service-text">
+                    <p>
+                    </p>
+                </div>
             </div>
-          </div>
-          <!-----------------------Branding--------------------------->
-          <div class="slider fade">
-            <div class="tab-icon">
-              <i class="fas fa-infinity icon-style"></i>
-              Branding
+            <!-----------------------Web Design--------------------------->
+            <div class="slider fade">
+                <div class="tab-icon">
+                    <i class="icon-style far fa-edit" style="padding-left: 10%"></i>
+                    Web Design
+                </div>
+                <div class="service-text">
+                    <p>
+                    </p>
+                </div>
             </div>
-            <div class="service-text">
-              <p></p>
+            <!----------------------Graphic Design------------------------->
+            <div class="slider fade">
+                <div class="tab-icon">
+                    <i class="fas fa-pencil-ruler icon-style"></i>
+                    Graphic Design
+                </div>
+                <div class="service-text">
+                    <p>
+                    </p>
+                </div>
             </div>
-          </div>
-          <!-----------------------Web Design--------------------------->
-          <div class="slider fade">
-            <div class="tab-icon">
-              <i class="far fa-edit icon-style" style="padding-left: 10%"></i>
-              Web Design
-            </div>
-            <div class="service-text">
-              <p></p>
-            </div>
-          </div>
-          <!----------------------Graphic Design------------------------->
-          <div class="slider fade">
-            <div class="tab-icon">
-              <i class="fas fa-pencil-ruler icon-style"></i>
-              Graphic Design
-            </div>
-            <div class="service-text">
-              <p></p>
-            </div>
-          </div>
-          <a class="next" onclick="plusSlide(+1)">
-            <i class="fas fa-chevron-left"></i>
-          </a>
         </div>
-      </section>
 
-      <section
-        style="background: url('css/img/images.jpg') ; width: 100%;padding: 50px; background-attachment: fixed ;
+        <a class="prev" onclick="plusSlide(-1)">
+            <div class="arrow-icon">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+        </a>
+    </section>
+
+
+    <section
+            style="background: url('css/img/images.jpg') ; width: 100%;padding: 50px; background-attachment: fixed ;
      filter:grayscale(70%) ; background-size: cover"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-      >
+            data-aos="fade-up"
+            data-aos-duration="2000"
+    >
         <div class="aboutUs_Title">درباره ما</div>
 
         <div class="about_company" style="color: white; ">
-          <p>
-            متن بیو اینستاگرام : با استفاده از متن های خاص و شاخ در بیو
-            اینستاگرام، پروفایل اینستاگرامتان را جذاب کنید. خیلی از دختر و پسر
-            ها با همین ترفند زیبا سازی بیو صفحه هم کلی فالوور جذب کردند و هم به
-            راحتی ارتباط گرفتند به قول معروف مخ زدند :D: اگر دنبال تیکه های ناب
-            و فاز سنگینی اینجا پر هست یک سر بزنید : متن های فاز سنگین تیکه دار و
-            خفن و شاخ شکن بیوگرافی یا در اصطلاح بیو در اینستاگرام ویژگی است که
-            اینستاگرام در اختیار کاربران قرار داده تا بتوانند متن های زیبا و
-            دلخواهشان و حتی اطلاعاتی مختصر از خود در قسمت پروفایل اینستاگرام
-            قرار دهند.این قسمت برای همه کاربرانی که در اینستاگرام استفاده
-            میکنند، قابل رویت است و در جذب کاربران دیگر موثر است. در ادامه با
-            نوشته های گلچین شده در ماگرتا همراه باشید.
-          </p>
-          <!--<img class=comp_img" src="css/img/promo-1.png" style="width: 450px; height: 350px; ; margin-right: 10px "   >-->
+            <p>
+                متن بیو اینستاگرام : با استفاده از متن های خاص و شاخ در بیو
+                اینستاگرام، پروفایل اینستاگرامتان را جذاب کنید. خیلی از دختر و پسر
+                ها با همین ترفند زیبا سازی بیو صفحه هم کلی فالوور جذب کردند و هم به
+                راحتی ارتباط گرفتند به قول معروف مخ زدند :D: اگر دنبال تیکه های ناب
+                و فاز سنگینی اینجا پر هست یک سر بزنید : متن های فاز سنگین تیکه دار و
+                خفن و شاخ شکن بیوگرافی یا در اصطلاح بیو در اینستاگرام ویژگی است که
+                اینستاگرام در اختیار کاربران قرار داده تا بتوانند متن های زیبا و
+                دلخواهشان و حتی اطلاعاتی مختصر از خود در قسمت پروفایل اینستاگرام
+                قرار دهند.این قسمت برای همه کاربرانی که در اینستاگرام استفاده
+                میکنند، قابل رویت است و در جذب کاربران دیگر موثر است. در ادامه با
+                نوشته های گلچین شده در ماگرتا همراه باشید.
+            </p>
+            <!--<img class=comp_img" src="css/img/promo-1.png" style="width: 450px; height: 350px; ; margin-right: 10px "   >-->
         </div>
-      </section>
+    </section>
 
-      <section
-        class="member_aboutus"
-        id="About"
-        style="background-color: #ffffff;"
-        da
-      >
+    <section
+            class="member_aboutus"
+            id="About"
+            style="background-color: #ffffff;"
+            da
+    >
         <div class="aboutUs_Title">سوالات متداول</div>
         <div class="flex-container members_containers">
-          <div class="aboutUs_Text" data-aos="fade-up" data-aos-duration="2000">
-            <div
-              style="text-align: right ;    border-bottom: 1px solid black;
+            <div class="aboutUs_Text" data-aos="fade-up" data-aos-duration="2000">
+                <div
+                        style="text-align: right ;    border-bottom: 1px solid black;
     padding-bottom: 8px;"
-              id="aboutUs_Text_title1"
-            >
-              برای طراحی پروژه ها ایده از کجا گرفته می شود؟
-              <button class="button" id="aboutUs_Text_button1"></button>
+                        id="aboutUs_Text_title1"
+                >
+                    برای طراحی پروژه ها ایده از کجا گرفته می شود؟
+                    <button class="button" id="aboutUs_Text_button1"></button>
+                </div>
+
+                <div class="aboutus_content" id="aboutUs_Text_content1">
+                    برای طراحی سایت ها و پروژه های گرافیکی با توجه به موضوع کار و
+                    درخواست , طرحی جدید و ایده های نو متناسب با موضوع توسط تیم پیشنهاد
+                    خواهد شد که طبق خواست سفارش دهنده می تواند تغییر کند. مزیت این
+                    گونه طراحی در آن است که می توانیم بدون استفاده از قالب های آماده
+                    طرح مورد نظر شما را پیاده کنیم.
+                </div>
             </div>
 
-            <div class="aboutus_content" id="aboutUs_Text_content1">
-              برای طراحی سایت ها و پروژه های گرافیکی با توجه به موضوع کار و
-              درخواست , طرحی جدید و ایده های نو متناسب با موضوع توسط تیم پیشنهاد
-              خواهد شد که طبق خواست سفارش دهنده می تواند تغییر کند. مزیت این
-              گونه طراحی در آن است که می توانیم بدون استفاده از قالب های آماده
-              طرح مورد نظر شما را پیاده کنیم.
-            </div>
-          </div>
-
-          <div class="aboutUs_Text">
-            <div
-              style="text-align: right ;    border-bottom: 1px solid black;
+            <div class="aboutUs_Text">
+                <div
+                        style="text-align: right ;    border-bottom: 1px solid black;
     padding-bottom: 8px;"
-              id="aboutUs_Text_title2 "
-              data-aos="fade-up"
-              data-aos-duration="2000"
-            >
-              مدت زمان آماده شدن هر پروژه چه قدر است؟
-              <button id="aboutUs_Text_button2" class="button"></button>
-            </div>
+                        id="aboutUs_Text_title2 "
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+                >
+                    مدت زمان آماده شدن هر پروژه چه قدر است؟
+                    <button id="aboutUs_Text_button2" class="button"></button>
+                </div>
 
-            <div class="aboutus_content" id="aboutUs_Text_content2">
-              متناسب با پروژه گرفته شده طراحی سایت بین 2 هفته تا 2 ماه و برای
-              طراحی اپلیکیشن و programming زمانی بین یک ماه تا 3 ماه و برای بقیه
-              خدمات مدت زمانی بین یک الی 4 هفته به طول می انجامد. به دلیل طراحی
-              کامل سایت زمان این گوه طراحی هایی که از قالب آماده استفاده نمی شود
-              زمان زیادی خواهد گرفت.
+                <div class="aboutus_content" id="aboutUs_Text_content2">
+                    متناسب با پروژه گرفته شده طراحی سایت بین 2 هفته تا 2 ماه و برای
+                    طراحی اپلیکیشن و programming زمانی بین یک ماه تا 3 ماه و برای بقیه
+                    خدمات مدت زمانی بین یک الی 4 هفته به طول می انجامد. به دلیل طراحی
+                    کامل سایت زمان این گوه طراحی هایی که از قالب آماده استفاده نمی شود
+                    زمان زیادی خواهد گرفت.
+                </div>
             </div>
-          </div>
-          <div class="aboutUs_Text">
-            <div
-              id="aboutUs_Text_title3"
-              style="text-align: right ;    border-bottom: 1px solid black;
+            <div class="aboutUs_Text">
+                <div
+                        id="aboutUs_Text_title3"
+                        style="text-align: right ;    border-bottom: 1px solid black;
     padding-bottom: 8px;"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-            >
-              چرا شرکت ما ؟
-              <button id="aboutUs_Text_button3" class="button"></button>
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+                >
+                    چرا شرکت ما ؟
+                    <button id="aboutUs_Text_button3" class="button"></button>
+                </div>
+
+                <div class="aboutus_content" id="aboutUs_Text_content3">
+                    برای طراحی سایت ها و پروژه های گرافیکی با توجه به موضوع کار و
+                    درخواست , طرحی جدید و ایده های نو متناسب با موضوع توسط تیم پیشنهاد
+                    خواهد شد که طبق خواست سفارش دهنده می تواند تغییر کند. مزیت این
+                    گونه طراحی در آن است که می توانیم بدون استفاده از قالب های آماده
+                    طرح مورد نظر شما را پیاده کنیم.
+                </div>
             </div>
 
-            <div class="aboutus_content" id="aboutUs_Text_content3">
-              برای طراحی سایت ها و پروژه های گرافیکی با توجه به موضوع کار و
-              درخواست , طرحی جدید و ایده های نو متناسب با موضوع توسط تیم پیشنهاد
-              خواهد شد که طبق خواست سفارش دهنده می تواند تغییر کند. مزیت این
-              گونه طراحی در آن است که می توانیم بدون استفاده از قالب های آماده
-              طرح مورد نظر شما را پیاده کنیم.
-            </div>
-          </div>
+            <!--</section>-->
 
-          <!--</section>-->
+            <!--<section class="members" style="background-color: #ffffff;">-->
 
-          <!--<section class="members" style="background-color: #ffffff;">-->
-
-          <!--Meliwww-->
-
-          <div
-            class="aboutUs_Title"
-            data-aos="zoom-in-up"
-            data-aos-duration="2000"
-          >
-            تیم طراحی
-          </div>
-
-          <div class="flex-container members_containers">
-            <div
-              class="members_text"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-            >
-              <img src="css/img/mamad2.jpg" />
-              <br style="clear: both" />
-              محمدحسین کریمیان
-              <br />
-              مهندسی کامپیوتر دانشگاه علم و صنعت
-            </div>
+            <!--Meliwww-->
 
             <div
-              class="members_text"
-              data-aos="zoom-in"
-              data-aos-duration="2000"
+                    class="aboutUs_Title"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="2000"
             >
-              <img src="css/img/IMG_4856.JPG" />
-              <br style="clear: both" />
-
-              محمدعلی فراهت
-              <br />
-              مهندسی کامپیوتر دانشگاه علم و صنعت
+                تیم طراحی
             </div>
-            <div
-              class="members_text"
-              data-aos="zoom-in"
-              data-aos-duration="3000"
-            >
-              <img src="css/img/meliiw2.jpg" />
-              <br style="clear: both" />
 
-              ملیکا احمدی رنجبر
-              <br />
-              مهندسی کامپیوتر دانشگاه علم و صنعت
-            </div>
-            <div
-              class="members_text"
-              data-aos="zoom-in"
-              data-aos-duration="3000"
-            >
-              <img src="css/img/amin4.jpg" />
-              <br style="clear: both" />
+            <div class="flex-container members_containers">
+                <div
+                        class="members_text"
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                >
+                    <img src="css/img/mamad2.jpg"/>
+                    <br style="clear: both"/>
+                    محمدحسین کریمیان
+                    <br/>
+                    مهندسی کامپیوتر دانشگاه علم و صنعت
+                </div>
 
-              محمدامین قسوری
-              <br />
-              مهندسی کامپیوتر دانشگاه علم و صنعت
-            </div>
-            <div
-              class="members_text"
-              data-aos="zoom-in"
-              data-aos-duration="2000"
-            >
-              <img src="css/img/armin.jpg" />
-              <br style="clear: both" />
+                <div
+                        class="members_text"
+                        data-aos="zoom-in"
+                        data-aos-duration="2000"
+                >
+                    <img src="css/img/IMG_4856.JPG"/>
+                    <br style="clear: both"/>
 
-              آرمین روحانیان
-              <br />
-              ریاضی دانشگاه شریف
-            </div>
-            <div
-              class="members_text"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-            >
-              <img src="css/img/IMG_4157.JPG" />
-              <br style="clear: both" />
+                    محمدعلی فراهت
+                    <br/>
+                    مهندسی کامپیوتر دانشگاه علم و صنعت
+                </div>
+                <div
+                        class="members_text"
+                        data-aos="zoom-in"
+                        data-aos-duration="3000"
+                >
+                    <img src="css/img/meliiw2.jpg"/>
+                    <br style="clear: both"/>
 
-              امیرحسین احمدی
-              <br />
-              مهندسی کامپیوتر دانشگاه علم و صنعت
+                    ملیکا احمدی رنجبر
+                    <br/>
+                    مهندسی کامپیوتر دانشگاه علم و صنعت
+                </div>
+                <div
+                        class="members_text"
+                        data-aos="zoom-in"
+                        data-aos-duration="3000"
+                >
+                    <img src="css/img/amin4.jpg"/>
+                    <br style="clear: both"/>
+
+                    محمدامین قسوری
+                    <br/>
+                    مهندسی کامپیوتر دانشگاه علم و صنعت
+                </div>
+                <div
+                        class="members_text"
+                        data-aos="zoom-in"
+                        data-aos-duration="2000"
+                >
+                    <img src="css/img/armin.jpg"/>
+                    <br style="clear: both"/>
+
+                    آرمین روحانیان
+                    <br/>
+                    ریاضی دانشگاه شریف
+                </div>
+                <div
+                        class="members_text"
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                >
+                    <img src="css/img/IMG_4157.JPG"/>
+                    <br style="clear: both"/>
+
+                    امیرحسین احمدی
+                    <br/>
+                    مهندسی کامپیوتر دانشگاه علم و صنعت
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section
-        class="title_section2"
-        id="Contact"
-        style="background-color: black; "
-      >
+    <section
+            class="title_section2"
+            id="Contact"
+            style="background-color: black; "
+    >
         <div class="title_description2">
-          <a href="https://www.instagram.com" target="new tab"
+            <a href="https://www.instagram.com" target="new tab"
             ><p class="fa fa-twitter fa-3x"></p
-          ></a>
-          <a href="https://www.instagram.com" target="new tab"
+            ></a>
+            <a href="https://www.instagram.com" target="new tab"
             ><p class="fa fa-instagram fa-3x"></p
-          ></a>
-          <a href="https://www.instagram.com" target="new tab"
+            ></a>
+            <a href="https://www.instagram.com" target="new tab"
             ><p class="fa fa-telegram fa-3x"></p
-          ></a>
+            ></a>
 
-          <a href="https://www.instagram.com" target="new tab"
+            <a href="https://www.instagram.com" target="new tab"
             ><p class="fa fa-linkedin fa-3x"></p
-          ></a>
-          <div class="footer-text">
-            © تمامی حقوق این وبسایت در اختیار مجموعه noname و استفاده از محتوای
-            آن تنها با درج منبع امکان پذیر می باشد.
-          </div>
+            ></a>
+            <div class="footer-text">
+                © تمامی حقوق این وبسایت در اختیار مجموعه noname و استفاده از محتوای
+                آن تنها با درج منبع امکان پذیر می باشد.
+            </div>
         </div>
-      </section>
-    </div>
-    <script>
-      var idx = 0;
-      var size = document.getElementsByClassName("slider").length;
-      nextSlide();
+    </section>
+</div>
+<script>
+    var idx = 0;
+    var size = document.getElementsByClassName("slider").length;
+    nextSlide();
 
-      function showSlide(n) {
+    function showSlide(n) {
         var slides = document.getElementsByClassName("slider");
         var i;
         for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+            slides[i].style.display = "none";
         }
         slides[idx].style.display = "block";
-      }
+    }
 
-      function nextSlide() {
+    function nextSlide() {
         showSlide(idx);
         idx = (idx + 1) % size;
         setTimeout(nextSlide, 5000);
-      }
+    }
 
-      function plusSlide(index) {
+    function plusSlide(index) {
         idx = (idx + index + size) % size;
         showSlide(idx);
-      }
-      function ChangeBackgroundColor() {
+    }
+
+    function ChangeBackgroundColor() {
         if (window.pageYOffset != 0) {
-          document.getElementById("Hook").style.backgroundColor = "black";
-          document.getElementById("Hook").style.padding = "6px";
+            document.getElementById("Hook").style.backgroundColor = "black";
+            document.getElementById("Hook").style.padding = "6px";
+        } else {
+            document.getElementById("Hook").style.backgroundColor = "transparent";
+            document.getElementById("Hook").style.padding = "25px";
         }
-        else {
-          document.getElementById("Hook").style.backgroundColor = "transparent";
-          document.getElementById("Hook").style.padding = "25px";
-        }
-      }
-    </script>
-  </body>
+    }
+</script>
+</body>
 </html>
