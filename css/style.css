@@ -130,9 +130,9 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 1s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {
@@ -147,26 +147,36 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 .service-section {
     width: 100%;
     background: #ffffff;
+    display: inline-flex;
 }
 
 .container {
     margin: 10px 0;
     padding: 10px 0;
-    width: 100%;
+    width: 90%;
     height: border-box;
     position: inherit;
-    display: inline-flex;
+    display: block;
+}
+
+.arrow-icon {
+    width: 60%;
+    height: 20%;
+    margin: auto;
 }
 
 .prev, .next{
     width: 5%;
-    font-size: 40px;
-    max-width: 100px;
+    font-size: 50px;
     background: #919174;
     transition: 0.5s ease;
     user-select: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
 
 .slider {
     width: 100%;
