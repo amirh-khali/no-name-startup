@@ -41,30 +41,30 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 }
 
 .page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #3aff8d;
-  width: 100%;
-  height: 2000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #3aff8d;
+    width: 100%;
+    height: 2000px;
 }
 
 .title_section {
-  display: flow-root;
-  width: 100%;
-  height: 100vh;
+    display: flow-root;
+    width: 100%;
+    height: 100vh;
 }
 
 .title_text {
-  font-size: 55px;
-  text-align: center;
-  padding: 25px 0 25px 0px;
+    font-size: 55px;
+    text-align: center;
+    padding: 25px 0 25px 0px;
 }
 
 .title_description {
-  text-align: center;
-  margin-top: 310px;
-  padding: 25px 0 25px 0px;
+    text-align: center;
+    margin-top: 310px;
+    padding: 25px 0 25px 0px;
 }
 
 /*
@@ -87,22 +87,25 @@ NOTICE: bache ha code block e khodetoono berinin toosh
     position: fixed;
     top: 0px;
     width: 100%;
-    background-color: black;
-    padding: 6px;
+    background: transparent;
+    padding: 25px;
     z-index: 1;
+    transition: padding 0.7s, background 0.7s;
 }
 
-.bar{
+.bar {
     font-size: 13px;
-    margin:0px 0px 0px 2%;
+    margin: 0px 0px 0px 2%;
     font-family: 'Imprint MT Shadow';
     text-decoration: none;
-    color:antiquewhite;
+    color: antiquewhite;
 }
+
 .logo_span {
     float: left;
     /*width: 12%;*/
 }
+
 .nav_bar {
     margin-right: 10px;
     float: right;
@@ -130,42 +133,63 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 1s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {
-    from {opacity: 0.2}
-    to {opacity: 1}
+    from {
+        opacity: 0.2
+    }
+    to {
+        opacity: 1
+    }
 }
+
 @keyframes fade {
-    from {opacity: 0.2}
-    to {opacity: 1}
+    from {
+        opacity: 0.2
+    }
+    to {
+        opacity: 1
+    }
 }
 
 .service-section {
     width: 100%;
     background: #ffffff;
+    display: inline-flex;
 }
 
 .container {
     margin: 10px 0;
-    padding: 10px 0;
-    width: 100%;
+    padding: 10px 0 80px 0;
+    width: 90%;
     height: border-box;
     position: inherit;
-    display: inline-flex;
+    display: block;
 }
 
-.prev, .next{
+.arrow-icon {
+    height: 20%;
+    margin: auto;
+}
+
+.prev, .next {
+    background: rgba(0, 0, 0, 0.1);
     width: 5%;
-    font-size: 40px;
-    max-width: 100px;
-    background: #919174;
+    font-size: 50px;
     transition: 0.5s ease;
     user-select: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .slider {
@@ -216,34 +240,34 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |
 |*/
 .home_sectoin {
-  display: flow-root;
-  width: 100%;
-  height: 100vh;
+    display: flow-root;
+    width: 100%;
+    height: 100vh;
 }
 
 .content {
-  font-family: 'Gandom';
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  
-  font-size: 35px;
-  position: absolute;
-  vertical-align: text-bottom;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
+    font-family: 'Gandom';
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: 35px;
+    position: absolute;
+    vertical-align: text-bottom;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
 }
 
 #myVideo {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
 }
 
 /*
@@ -259,35 +283,39 @@ NOTICE: bache ha code block e khodetoono berinin toosh
     /*-webkit-transition: transform 1s;*/
     transition: transform 1s;
 }
-.button{
-    background: url('img/dropdown.png') ;
+
+.button {
+    background: url('img/dropdown.png');
     background-size: cover;
-    width: 20px ;
+    width: 20px;
     height: 20px;
-    border: none ;
+    border: none;
     float: left;
     margin-left: 10px;
 }
-#button{
+
+#button {
     transform: rotate(-180deg);
     -moz-transition: transform 1s;
     -webkit-transition: transform 1s;
 }
-.aboutUs_Title{
+
+.aboutUs_Title {
     font-size: 30px;
     text-align: right;
     padding: 20px 20px 20px 20px;
     color: darkgray;
 }
+
 /*.aboutUs_Text{*/
-    /*font-size: 20px;*/
-    /*text-align: center;*/
-    /*margin-top: 10px;*/
-    /*padding: 20px 20px 20px 20px;*/
-    /*width: 100%;*/
-    /*color: black;*/
+/*font-size: 20px;*/
+/*text-align: center;*/
+/*margin-top: 10px;*/
+/*padding: 20px 20px 20px 20px;*/
+/*width: 100%;*/
+/*color: black;*/
 /*}*/
-.aboutUs_Textimg{
+.aboutUs_Textimg {
     text-align: right;
     margin-top: 20px;
     /*padding: 20px 20px 20px 20px;*/
@@ -298,6 +326,7 @@ NOTICE: bache ha code block e khodetoono berinin toosh
     max-width: 350px;
 
 }
+
 .flex-container {
     float: left;
     width: 100%;
@@ -306,27 +335,29 @@ NOTICE: bache ha code block e khodetoono berinin toosh
     justify-content: center;
 }
 
-.about_background{
+.about_background {
     background-image: url("img/2photoshop.jpg");
-    background-size: cover  ;
+    background-size: cover;
     width: 100%;
     background-attachment: fixed;
 }
+
 /*.about_company{*/
-    /*font-size: 20px;*/
-    /*text-align: center;*/
-    /*display: flex;*/
-    /*width: 100%;*/
-    /*justify-content: center;*/
-    /*color: black;*/
-    /*padding: 15px 85px 0px 85px;*/
+/*font-size: 20px;*/
+/*text-align: center;*/
+/*display: flex;*/
+/*width: 100%;*/
+/*justify-content: center;*/
+/*color: black;*/
+/*padding: 15px 85px 0px 85px;*/
 /*}*/
-.aboutus_content{
+.aboutus_content {
     margin-top: 15px;
     display: none;
     padding: 20px;
 }
-.members{
+
+.members {
     display: flow-root;
     width: 100%;
     height: 400px;
@@ -346,7 +377,7 @@ NOTICE: bache ha code block e khodetoono berinin toosh
     margin-right: auto;
 }
 
-.img_container_img{
+.img_container_img {
     /*display: flex;*/
     /*float: left;*/
     text-align: center;
@@ -355,7 +386,7 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 
 }
 
-.aboutUs_Text img{
+.aboutUs_Text img {
     /*height: 200px;*/
     box-shadow: white 1px 1px 1px 1px;
     /*padding: 50px;*/
@@ -363,6 +394,7 @@ NOTICE: bache ha code block e khodetoono berinin toosh
     height: auto;
     max-height: 167px;
 }
+
 .img_container_img img {
     /*border-radius: 50px;*/
     height: 200px;
@@ -370,11 +402,11 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 
 }
 
-div, p, label, input, select  {
+div, p, label, input, select {
     font-family: 'Gandom';
 }
 
-.members_text img{
+.members_text img {
     height: 150px;
     width: 150px;
     border-radius: 100px;
@@ -385,14 +417,16 @@ div, p, label, input, select  {
     transform-origin: center center;
     filter: brightness(80%);
 }
-.members_text img:hover{
+
+.members_text img:hover {
     /*filter: none;*/
     /*-webkit-filter: none; !* Google Chrome, Safari 6+ & Opera 15+ *!*/
     /*filter: none;*/
     filter: brightness(100%);
     transform: scale(1.05);
 }
-.members_text{
+
+.members_text {
     font-size: 12px;
     color: darkgray;
     text-align: center;
@@ -403,7 +437,8 @@ div, p, label, input, select  {
     /*196*/
 
 }
-.member_aboutus{
+
+.member_aboutus {
     display: flow-root;
     width: 100%;
     padding: 20px;
@@ -425,12 +460,14 @@ div, p, label, input, select  {
     width: 100%;
     height: 250px;
 }
+
 .title_description2 {
     text-align: center;
-    margin-top:  0px;
+    margin-top: 0px;
     padding: 25px 0 25px 0px;
 }
-.footer-text{
+
+.footer-text {
     text-align: center;
     /*margin-top: 10px;*/
     /*margin-right:60px;*/
@@ -440,57 +477,66 @@ div, p, label, input, select  {
     direction: rtl;
 
 }
-.fa-instagram{
+
+.fa-instagram {
     color: darkgray;
-    font-size:45px;
+    font-size: 45px;
     alignment: left;
     margin-right: 20px;
     transition: font-size 1s, color 1s;
     -webkit-transition: font-size 1s, color 1s;
 }
-.fa-instagram:hover{
-    color:red;
+
+.fa-instagram:hover {
+    color: red;
 
 
 }
-.fa-telegram{
+
+.fa-telegram {
 
     color: darkgray;
-    font-size:45px;
+    font-size: 45px;
     alignment: left;
     margin-right: 20px;
     transition: font-size 1s, color 1s;
     -webkit-transition: font-size 1s, color 1s;
 }
-.fa-telegram:hover{
-    color:cornflowerblue;
+
+.fa-telegram:hover {
+    color: cornflowerblue;
 
 
 }
-.fa-twitter{
+
+.fa-twitter {
     color: darkgray;
-    font-size:45px;
+    font-size: 45px;
     alignment: left;
     margin-right: 20px;
     transition: font-size 1s, color 1s;
     -webkit-transition: font-size 1s, color 1s;
 }
-.fa-twitter:hover{
-    color:royalblue;
+
+.fa-twitter:hover {
+    color: royalblue;
 
 
 }
-.fa-linkedin{
+
+.fa-linkedin {
     color: darkgray;
-    font-size:45px;
+    font-size: 45px;
     alignment: left;
     margin-right: 20px;
     transition: font-size 1s, color 1s;
     -webkit-transition: font-size 1s, color 1s;
 }
-.fa-linkedin:hover{
-    color:blue;
+
+.fa-linkedin:hover {
+    color: blue;
 }
+
 /*
 |--------------------------------------------------------------------------
 | *************************************************************************
@@ -515,6 +561,7 @@ div, p, label, input, select  {
 
     color: white;
 }
+
 .form-header a {
     color: white;
     text-decoration: none;
@@ -524,6 +571,7 @@ div, p, label, input, select  {
 
     transition: color 0.2s ease-in-out;
 }
+
 .form-header:hover a {
     color: dodgerblue;
 }
@@ -536,7 +584,7 @@ div, p, label, input, select  {
 
     background-image: url("img/img4.jpg");
 
-    background-position: center top ;
+    background-position: center top;
     background-size: cover;
     height: 100vh;
 }
@@ -590,11 +638,13 @@ div, p, label, input, select  {
 
     border-color: #fff0 #fff0 black #fff0;
 }
+
 .form-collapse-block::placeholder {
     color: rgba(000, 000, 000, 0.8);
 
     transition: color 0.2s ease-in-out;
 }
+
 .form-collapse-block:focus::placeholder {
     color: rgba(000, 000, 000, 0);
 }
@@ -607,8 +657,9 @@ div, p, label, input, select  {
 
     cursor: pointer;
 
-    transition: color,background-color 0.4s ease-in-out;
+    transition: color, background-color 0.4s ease-in-out;
 }
+
 .form-select:hover {
     background-color: black;
     color: white;
@@ -638,9 +689,11 @@ div, p, label, input, select  {
 
     transition: box-shadow 0.2s ease-in-out;
 }
+
 .form-submit:hover {
     box-shadow: black 0px 4px 12px 1px;
 }
+
 .form-submit:active {
     box-shadow: none;
 }
@@ -672,22 +725,25 @@ div, p, label, input, select  {
 |*/
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
-    .aboutUs_Text{
+    .aboutUs_Text {
         font-size: 12px;
     }
-    .about_company{
+
+    .about_company {
         padding: 0px;
         font-size: 12px;
     }
-    .comp_img{
+
+    .comp_img {
         width: 240px;
         height: 160px;
     }
 
 
 }
+
 @media screen and (min-width: 450px) {
-    .aboutUs_Text{
+    .aboutUs_Text {
         font-size: 20px;
         text-align: center;
         margin-top: 10px;
@@ -695,7 +751,8 @@ div, p, label, input, select  {
         width: 100%;
         color: black;
     }
-    .about_company{
+
+    .about_company {
         padding: 15px 85px 0px 85px;
         font-size: 20px;
         text-align: center;
@@ -704,7 +761,8 @@ div, p, label, input, select  {
         justify-content: center;
         color: black;
     }
-    .comp_img{
+
+    .comp_img {
         width: 450px;
         height: 350px;
         margin-right: 10px;
