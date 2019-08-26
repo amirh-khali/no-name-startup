@@ -87,9 +87,10 @@ NOTICE: bache ha code block e khodetoono berinin toosh
     position: fixed;
     top: 0px;
     width: 100%;
-    background-color: black;
-    padding: 6px;
+    background: transparent;
+    padding: 6px 6px 30px 6px;
     z-index: 1;
+    transition: padding 0.7s, background 0.7s;
 }
 
 .bar{
