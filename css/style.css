@@ -127,6 +127,88 @@ NOTICE: bache ha code block e khodetoono berinin toosh
 |
 |*/
 
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0.2}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: 0.2}
+    to {opacity: 1}
+}
+
+.service-section {
+    width: 100%;
+    background: #ffffff;
+}
+
+.container {
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 100%;
+    height: border-box;
+    position: inherit;
+    display: inline-flex;
+}
+
+.prev, .next{
+    width: 5%;
+    font-size: 40px;
+    max-width: 100px;
+    background: #919174;
+    transition: 0.5s ease;
+    user-select: none;
+    cursor: pointer;
+}
+
+.slider {
+    width: 100%;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+.tab-icon {
+    text-decoration: none;
+    font-family: Dosis, arial, sans-serif;
+    width: 8%;
+    min-width: 120px;
+    height: inherit;
+    padding: 10px 30px;
+    display: grid;
+}
+
+.service-tab {
+    display: inline-block;
+}
+
+.service-text {
+    width: 92%;
+    font-family: Dosis, Arial, sans-serif;
+    font-size: 23px;
+    line-height: 35px;
+    letter-spacing: 2px;
+}
+
+.icon-style {
+    margin: auto;
+    width: 100%;
+    font-size: 90px;
+}
+
+
+.list-icon > li {
+    display: flex;
+    font-size: 20px;
+}
+
 /*
 |--------------------------------------------------------------------------
 | Ali Css Code
