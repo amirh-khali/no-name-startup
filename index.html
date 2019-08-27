@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
+
+
 <head>
+
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <title>Title</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <title>Space</title>
+
+    <!--CSS Links-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+
+    <!--Scripts (HEAD)-->
+
     <script src="https://kit.fontawesome.com/8841a9458a.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $(document).ready(function () {
             $("#aboutUs_Text_button1").click(function () {
@@ -38,26 +42,22 @@
         });
     </script>
 
-    <!--MAG-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
-<body class="main_body" onscroll="ChangeBackgroundColor()">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script>
-    AOS.init({
-        easing: "ease-out-back"
-    });
-</script>
+
+<body class="main_body" onscroll="ChangeBackgroundColor()">
+
 
 <div class="page" style="background: white">
+
+    <!--Hook Header-->
+
     <div class="header" id="Hook">
         <span class="logo_span">
-          <a
-                  href="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwicpeOA3ITkAhUmsKQKHQozDnsQjRx6BAgBEAQ&url=http%3A%2F%2Frhythm.bestlooker.pro%2Fspecial-construction-1-contact.html&psig=AOvVaw0qeRajo68up_9NIOvIXXAU&ust=1565953076332992"
-                  target="newtab"
-          ><img src="css/img/logo.png" alt="logo" width="70" height="20"
-          /></a>
+          <a href="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwicpeOA3ITkAhUmsKQKHQozDnsQjRx6BAgBEAQ&url=http%3A%2F%2Frhythm.bestlooker.pro%2Fspecial-construction-1-contact.html&psig=AOvVaw0qeRajo68up_9NIOvIXXAU&ust=1565953076332992"
+             target="newtab">
+              <img src="css/img/logo.png" alt="logo" width="70" height="20"/>
+          </a>
         </span>
 
         <nav class="nav_bar">
@@ -68,12 +68,9 @@
         </nav>
     </div>
 
-    <section
-            class="home_sectoin"
-            id="Title"
-            style="background-color: #000000;"
-    >
-        <!--Eshqam ali Joon-->
+    <!--Home Section-->
+
+    <section class="home_sectoin" id="Title" style="background-color: #000000;">
 
         <video autoplay muted loop id="myVideo">
             <source src="./videos/video_background.mp4" type="video/mp4"/>
@@ -83,6 +80,8 @@
             <h1>Space</h1>
         </div>
     </section>
+
+    <!--Service Section-->
 
     <section class="service-section" id="Service" style="background-color: #ffffff;">
 
@@ -94,7 +93,9 @@
 
 
         <div class="container">
+
             <div class="title_text">Services</div>
+
             <!-----------------------Development--------------------------->
             <div class="slider fade">
                 <div class="tab-icon">
@@ -106,6 +107,8 @@
                     </p>
                 </div>
             </div>
+
+
             <!-----------------------Branding--------------------------->
             <div class="slider fade">
                 <div class="tab-icon">
@@ -117,6 +120,8 @@
                     </p>
                 </div>
             </div>
+
+
             <!-----------------------Web Design--------------------------->
             <div class="slider fade">
                 <div class="tab-icon">
@@ -128,6 +133,8 @@
                     </p>
                 </div>
             </div>
+
+
             <!----------------------Graphic Design------------------------->
             <div class="slider fade">
                 <div class="tab-icon">
@@ -135,10 +142,11 @@
                     Graphic Design
                 </div>
                 <div class="service-text">
-                    <p>
-                    </p>
                 </div>
+
             </div>
+
+
         </div>
 
         <a class="prev" onclick="plusSlide(-1)">
@@ -146,19 +154,19 @@
                 <i class="fas fa-chevron-left"></i>
             </div>
         </a>
+
+
     </section>
 
+    <!--about us Section-->
 
-    <section
-            style="background: url('css/img/images.jpg') ; width: 100%;padding: 50px; background-attachment: fixed ;
-     filter:grayscale(70%) ; background-size: cover"
+    <section style="background: url('css/img/images.jpg') ; width: 100%;padding: 50px; background-attachment: fixed;filter:grayscale(70%) ; background-size: cover">
 
-    >
-        <div class="aboutUs_Title" data-aos="fade-up"
-             data-aos-duration="2000">درباره ما</div>
+        <div class="aboutUs_Title" data-aos="fade-up" data-aos-duration="2000">
+            درباره ما
+        </div>
 
-        <div class="about_company" style="color: white; " data-aos="fade-up"
-             data-aos-duration="2000">
+        <div class="about_company" style="color: white; " data-aos="fade-up" data-aos-duration="2000">
             <p>
                 متن بیو اینستاگرام : با استفاده از متن های خاص و شاخ در بیو
                 اینستاگرام، پروفایل اینستاگرامتان را جذاب کنید. خیلی از دختر و پسر
@@ -172,24 +180,22 @@
                 میکنند، قابل رویت است و در جذب کاربران دیگر موثر است. در ادامه با
                 نوشته های گلچین شده در ماگرتا همراه باشید.
             </p>
-            <!--<img class=comp_img" src="css/img/promo-1.png" style="width: 450px; height: 350px; ; margin-right: 10px "   >-->
         </div>
+
     </section>
 
-    <section
-            class="member_aboutus"
-            id="About"
-            style="background-color: #ffffff;"
-            da
-    >
+    <!--FAQ -->
+
+    <section class="member_aboutus" id="About" style="background-color: #ffffff;">
+
         <div class="aboutUs_Title" data-aos="fade-up" data-aos-duration="2000" style="padding: 70px">سوالات متداول</div>
+
         <div class="flex-container">
+
             <div class="aboutUs_Text" data-aos="fade-up" data-aos-duration="2000">
-                <div
-                        style="text-align: right ;    border-bottom: 1px solid black;
-    padding-bottom: 8px;"
-                        id="aboutUs_Text_title1"
-                >
+
+                <div style="text-align: right ;    border-bottom: 1px solid black;
+    padding-bottom: 8px;" id="aboutUs_Text_title1">
                     برای طراحی پروژه ها ایده از کجا گرفته می شود؟
                     <button class="button" id="aboutUs_Text_button1"></button>
                 </div>
@@ -201,24 +207,22 @@
                     گونه طراحی در آن است که می توانیم بدون استفاده از قالب های آماده
                     طرح مورد نظر شما را پیاده کنیم.
                 </div>
+
             </div>
 
 
             <div class="aboutUs_Text">
-                <div
-                        id="aboutUs_Text_title3"
-                        style="text-align: right ;    border-bottom: 1px solid black;
-    padding-bottom: 8px;"
-                        data-aos="fade-up"
-                        data-aos-duration="2000"
-                >
+
+                <div id="aboutUs_Text_title3" style="text-align: right ;    border-bottom: 1px solid black;
+    padding-bottom: 8px;" data-aos="fade-up" data-aos-duration="2000">
                     چرا شرکت ما ؟
                     <button id="aboutUs_Text_button3" class="button"></button>
                 </div>
 
                 <div class="aboutus_content" id="aboutUs_Text_content3" data-aos-duration="2000" data-aos="fade-up">
 
-                    <div class="whyus" >
+                    <div class="whyus">
+
                         <div style="margin-left: 20px; width:33%" data-aos-duration="2000" data-aos="fade-up">
                             <i class="fas fa-drafting-compass" style="font-size: 50px"></i>
                             <br>
@@ -226,6 +230,7 @@
                             <br>
                             طراحی شیک و ساده
                         </div>
+
                         <div style="margin-left: 20px;width: 33%;" data-aos-duration="2000" data-aos="fade-up">
                             <i class="fas fa-award" style="font-size: 50px ;"></i>
                             <br>
@@ -233,6 +238,7 @@
                             <br>
                             مسئولیت پذیری
                         </div>
+
                         <div style="width: 33%;" data-aos-duration="2000" data-aos="fade-up">
                             <i class="far fa-comments" style="font-size: 50px"></i>
                             <br>
@@ -240,131 +246,134 @@
                             <br>
                             ارتباط دوستانه
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+
+        </div>
+
+    </section>
+
+    <!--Member Section-->
+
+    <section class="flex-container" style="padding: 70px">
+
+        <div class="aboutUs_Title" data-aos="zoom-in-up" data-aos-duration="2000">
+
+            تیم طراحی
+
+        </div>
+
+        <div class="members_containers">
+
+
+            <div class="members_text" data-aos="zoom-in" data-aos-duration="1000">
+
+                <img src="css/img/members/mohammad-karimian.jpg"/>
+
+                <br style="clear: both"/>
+                محمدحسین کریمیان
+                <br/>
+                مهندسی کامپیوتر دانشگاه علم و صنعت
+
+            </div>
+
+
+            <div class="members_text" data-aos="zoom-in" data-aos-duration="2000">
+
+                <img src="css/img/members/ali-farahat.JPG"/>
+
+                <br style="clear: both"/>
+
+                محمدعلی فراهت
+                <br/>
+                مهندسی کامپیوتر دانشگاه علم و صنعت
+
+            </div>
+
+
+            <div class="members_text" data-aos="zoom-in" data-aos-duration="3000">
+
+                <img src="css/img/members/melika-ahmadi.jpg"/>
+
+                <br style="clear: both"/>
+
+                ملیکا احمدی رنجبر
+                <br/>
+                مهندسی کامپیوتر دانشگاه علم و صنعت
+
+            </div>
+
+
+            <div class="members_text" data-aos="zoom-in" data-aos-duration="3000">
+
+                <img src="css/img/members/amin-mag.jpg"/>
+
+                <br style="clear: both"/>
+
+                محمدامین قسوری
+                <br/>
+                مهندسی کامپیوتر دانشگاه علم و صنعت
+
+            </div>
+
+
+            <div class="members_text" data-aos="zoom-in" data-aos-duration="2000">
+
+                <img src="css/img/members/armin.jpg"/>
+
+                <br style="clear: both"/>
+
+                آرمین روحانیان
+                <br/>
+                ریاضی دانشگاه شریف
+            </div>
+
+
+            <div class="members_text" data-aos="zoom-in" data-aos-duration="1000">
+
+                <img src="css/img/members/amirh-ahmadi.JPG"/>
+
+                <br style="clear: both"/>
+
+                امیرحسین احمدی
+                <br/>
+                مهندسی کامپیوتر دانشگاه علم و صنعت
+            </div>
+
         </div>
 
 
-            </section>
-
-            <section class="flex-container" style="padding: 70px" ">
-
-            <!--Meliwww-->
-
-            <div
-                    class="aboutUs_Title"
-                    data-aos="zoom-in-up"
-                    data-aos-duration="2000"
-
-            >
-                تیم طراحی
-            </div>
-
-            <div class="members_containers">
-                <div
-                        class="members_text"
-                        data-aos="zoom-in"
-                        data-aos-duration="1000"
-                >
-                    <img src="css/img/mamad2.jpg"/>
-                    <br style="clear: both"/>
-                    محمدحسین کریمیان
-                    <br/>
-                    مهندسی کامپیوتر دانشگاه علم و صنعت
-                </div>
-
-                <div
-                        class="members_text"
-                        data-aos="zoom-in"
-                        data-aos-duration="2000"
-                >
-                    <img src="css/img/IMG_4856.JPG"/>
-                    <br style="clear: both"/>
-
-                    محمدعلی فراهت
-                    <br/>
-                    مهندسی کامپیوتر دانشگاه علم و صنعت
-                </div>
-                <div
-                        class="members_text"
-                        data-aos="zoom-in"
-                        data-aos-duration="3000"
-                >
-                    <img src="css/img/meliiw2.jpg"/>
-                    <br style="clear: both"/>
-
-                    ملیکا احمدی رنجبر
-                    <br/>
-                    مهندسی کامپیوتر دانشگاه علم و صنعت
-                </div>
-                <div
-                        class="members_text"
-                        data-aos="zoom-in"
-                        data-aos-duration="3000"
-                >
-                    <img src="css/img/amin4.jpg"/>
-                    <br style="clear: both"/>
-
-                    محمدامین قسوری
-                    <br/>
-                    مهندسی کامپیوتر دانشگاه علم و صنعت
-                </div>
-                <div
-                        class="members_text"
-                        data-aos="zoom-in"
-                        data-aos-duration="2000"
-                >
-                    <img src="css/img/armin.jpg"/>
-                    <br style="clear: both"/>
-
-                    آرمین روحانیان
-                    <br/>
-                    ریاضی دانشگاه شریف
-                </div>
-                <div
-                        class="members_text"
-                        data-aos="zoom-in"
-                        data-aos-duration="1000"
-                >
-                    <img src="css/img/IMG_4157.JPG"/>
-                    <br style="clear: both"/>
-
-                    امیرحسین احمدی
-                    <br/>
-                    مهندسی کامپیوتر دانشگاه علم و صنعت
-                </div>
-            </div>
-        <!--</div>-->
-            </section class="members">
     </section>
 
-    <section
-            class="title_section2"
-            id="Contact"
-            style="background-color: black; "
-    >
-        <div class="title_description2">
-            <a href="https://www.instagram.com" target="new tab"
-            ><p class="fa fa-twitter fa-3x"></p
-            ></a>
-            <a href="https://www.instagram.com" target="new tab"
-            ><p class="fa fa-instagram fa-3x"></p
-            ></a>
-            <a href="https://www.instagram.com" target="new tab"
-            ><p class="fa fa-telegram fa-3x"></p
-            ></a>
+    <!--Footer And Contact us-->
 
-            <a href="https://www.instagram.com" target="new tab"
-            ><p class="fa fa-linkedin fa-3x"></p
-            ></a>
+    <section class="title_section2" id="Contact" style="background-color: black; ">
+
+        <div class="title_description2">
+
+            <a href="https://www.instagram.com" target="new tab"><p class="fa fa-twitter fa-3x"></p></a>
+            <a href="https://www.instagram.com" target="new tab"><p class="fa fa-instagram fa-3x"></p></a>
+            <a href="https://www.instagram.com" target="new tab"><p class="fa fa-telegram fa-3x"></p></a>
+            <a href="https://www.instagram.com" target="new tab"><p class="fa fa-linkedin fa-3x"></p></a>
+
             <div class="footer-text">
                 © تمامی حقوق این وبسایت در اختیار مجموعه noname و استفاده از محتوای
                 آن تنها با درج منبع امکان پذیر می باشد.
             </div>
+
         </div>
+
     </section>
+
 </div>
+
+
+<!--Scripts (Body)-->
+
 <script>
     var idx = 0;
     var size = document.getElementsByClassName("slider").length;
@@ -400,5 +409,11 @@
         }
     }
 </script>
+<script>
+    AOS.init({
+        easing: "ease-out-back"
+    });
+</script>
+
 </body>
 </html>

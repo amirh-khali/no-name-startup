@@ -7,8 +7,8 @@ class Database
 {
 
     private $host = "localhost";
-	private $user = "pmauser";
-	private $password = "sher124816";
+	private $user = "root";
+	private $password = "";
 	private $database = "computer_db";
 	public $conn;
 
@@ -22,7 +22,6 @@ class Database
     public function close(){
         $this->mysql_conn->close();
     }
-
 
 }
 
