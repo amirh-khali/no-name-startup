@@ -49,7 +49,11 @@ html {
 .title_text {
     font-size: 55px;
     text-align: center;
-    padding: 25px 0 25px 0px;
+    margin: 20px 0;
+    padding: 5px 0;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease;
 }
 
 .title_description {
@@ -115,7 +119,6 @@ html {
 |
 |*/
 
-
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1s;
@@ -147,11 +150,15 @@ html {
     display: inline-flex;
 }
 
+.service-section:hover .title_text {
+    border-bottom: 5px solid rgba(255, 211, 51, 0.8);
+    border-top: 5px solid rgba(255, 211, 51, 0.8);
+
+}
+
 .container {
-    margin: 10px 0;
-    padding: 10px 0 80px 0;
     width: 90%;
-    height: border-box;
+    padding: 30px 5%;
     position: inherit;
     display: block;
 }
@@ -164,7 +171,6 @@ html {
 .prev, .next {
     background: rgba(0, 0, 0, 0.1);
     width: 5%;
-    font-size: 50px;
     transition: 0.5s ease;
     user-select: none;
     cursor: pointer;
@@ -179,43 +185,69 @@ html {
 
 .slider {
     width: 100%;
+    display: none;
+    height: 350px;
+    color: rgba(0, 0, 0, 0.7);
+    transition: 0.4s ease;
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-.tab-icon {
-    text-decoration: none;
-    font-family: Dosis, arial, sans-serif;
-    width: 8%;
-    min-width: 120px;
-    height: inherit;
-    padding: 10px 30px;
-    display: grid;
-}
-
-.service-tab {
-    display: inline-block;
-}
-
-.service-text {
-    width: 92%;
-    font-family: Dosis, Arial, sans-serif;
-    font-size: 23px;
-    line-height: 35px;
-    letter-spacing: 2px;
+.slider:hover {
+    color: rgba(0, 0, 0, 1)
 }
 
 .icon-style {
     margin: auto;
     width: 100%;
-    font-size: 90px;
 }
 
+.tab-icon {
+    text-decoration: none;
+    line-height: 35px;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    text-align: center;
+    display: grid;
+}
 
-.list-icon > li {
-    display: flex;
+.tab-text {
+    width: 80%;
+    font-family: Dosis, Arial, sans-serif;
     font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
+
+.icon-text {
+    letter-spacing: 2px;
+    line-height: 25px;
+    padding-top: 5px;
+}
+
+.order-btn {
+    display: block;
+    margin: auto;
+    width: 60%;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: rgba(176, 140, 42, 0.62);
+    transition: 0.5s ease;
+}
+
+.order-btn:hover {
+    color: rgba(255, 211, 51, 0.8);
+    background: rgba(0, 0, 0, 0.7);
+    letter-spacing: 3px;
+}
+
 
 /*
 |--------------------------------------------------------------------------
@@ -428,11 +460,12 @@ div, p, label, input, select {
     height: auto;
 }
 
-.whyus{
+.whyus {
     width: 100%;
     display: inline-flex;
     justify-content: center;
 }
+
 .title_section2 {
     display: flow-root;
     width: 100%;
@@ -440,7 +473,7 @@ div, p, label, input, select {
 }
 
 .title_description2 {
-    float:  right;
+    float: right;
     text-align: center;
     margin-top: 0px;
     padding: 25px 0 25px 0px;
@@ -449,7 +482,7 @@ div, p, label, input, select {
 .footer-text {
     text-align: center;
     margin-top: 150px;
-    margin-right:20px;
+    margin-right: 20px;
     font-family: "Gandom";
     color: darkgray;
     font-size: 12px;
@@ -465,10 +498,11 @@ div, p, label, input, select {
     z-index: 1; /* matters! */
     background: linear-gradient(
             to bottom,
-            transparent,transparent);
+            transparent, transparent);
 
     float: right;
 }
+
 .instagram::before {
     content: "";
     position: absolute;
@@ -477,15 +511,17 @@ div, p, label, input, select {
     left: 0;
     width: 42px;
     height: 45px;
-    background: linear-gradient(to top , transparent 8%, #fdf497 6%, #fd5949 36%, #d6249f 55%, #285AEB 85%, transparent 90%);
+    background: linear-gradient(to top, transparent 8%, #fdf497 6%, #fd5949 36%, #d6249f 55%, #285AEB 85%, transparent 90%);
 
     opacity: 0;
     transition: opacity 0.4s;
     z-index: -1;
 }
+
 .instagram:hover::before {
     opacity: 1;
 }
+
 .fa-instagram {
     margin: 0 4px 0 0;
     color: darkgray;
@@ -495,9 +531,11 @@ div, p, label, input, select {
 
 
 }
-.fa-instagram:hover{
+
+.fa-instagram:hover {
     color: whitesmoke;
 }
+
 .fa-telegram {
     margin: 0 20px 0 0;
     color: darkgray;
@@ -544,15 +582,17 @@ div, p, label, input, select {
 
 
 }
-.footer-image{
+
+.footer-image {
     font-size: 12px;
     text-align: center;
     color: wheat;
-    width:100px;
-    display:inline-block;
-    margin:0 4  0px 0 0;
+    width: 100px;
+    display: inline-block;
+    margin: 0 4 0px 0 0;
 }
-.email-phone{
+
+.email-phone {
     float: left;
     justify-content: center;
     text-align: center;
@@ -727,6 +767,37 @@ div, p, label, input, select {
 |*/
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
+
+    /*-------service section beg--------*/
+    .slider-active {
+        display: block;
+    }
+
+    .prev, .next {
+        font-size: 15px;
+    }
+
+    .icon-style {
+        font-size: 70px;
+    }
+
+    .icon-text {
+        font-size: 15px;
+    }
+
+    .slider {
+        padding: 20px 5%;
+    }
+
+    .tab-text {
+        width: 100%;
+    }
+
+    .order-btn {
+        font-size: 20px;
+    }
+
+    /*-------service section end--------*/
     .aboutUs_Text {
         font-size: 12px;
     }
@@ -744,6 +815,37 @@ div, p, label, input, select {
 }
 
 @media screen and (min-width: 450px) {
+
+    /*-------service section beg--------*/
+    .slider-active {
+        display: inline-flex;
+    }
+
+    .prev, .next {
+        font-size: 35px;
+    }
+
+    .tab-icon {
+        height: 220px;
+    }
+
+    .icon-style {
+        font-size: 110px;
+    }
+
+    .icon-text {
+        font-size: 25px;
+    }
+
+    .slider {
+        padding: 60px 5%;
+    }
+
+    .order-btn {
+        font-size: 30px;
+    }
+
+    /*-------service section end--------*/
     .aboutUs_Text {
         font-size: 20px;
         text-align: center;
