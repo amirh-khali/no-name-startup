@@ -635,6 +635,7 @@ div, p, label, input, select {
 }
 
 .form_section {
+    display: table;
     position: absolute;
     top: 0;
     left: 0;
@@ -652,7 +653,7 @@ div, p, label, input, select {
 
     width: 375px;
 
-    margin: 30px auto auto auto;
+    margin: 30px auto 30px auto;
     padding: 20px;
 
     background-color: #ffffff90;
@@ -754,6 +755,22 @@ div, p, label, input, select {
 
 .form-submit:active {
     box-shadow: none;
+}
+
+.form-accepted {
+    direction: rtl;
+
+    width: 375px;
+
+    margin: 30px auto 30px auto;
+    padding: 20px;
+
+    margin-top: 330px;
+
+    background-color: #ffffff90;
+    border: 1px solid black;
+    text-align:center;
+    color: black;
 }
 
 
@@ -871,5 +888,3 @@ div, p, label, input, select {
         margin-right: 10px;
     }
 }
-
-

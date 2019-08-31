@@ -4,14 +4,14 @@ require_once("include/db_connection.php");
 
 $db_handle = new Database();
 
-$first_name = $_POST['first_name'];
-$last_name = $_POST['last_name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$description = $_POST['description'];
-$service = $_POST['service'];
+if (!empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['email']) && !empty($_POST['phone']) && !empty($_POST['service'])) {
 
-if (!empty($first_name) && !empty($last_name) && !empty($email) && !empty($phone) && !empty($service)) {
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $description = $_POST['description'];
+    $service = $_POST['service'];
 
     $sql = "INSERT INTO `user` (`first_name`, `last_name`, `email`, `phone`, `description`) VALUES ('$first_name', '$last_name', '$email', '$phone', '$description')";
     mysqli_query($db_handle->conn, $sql) or trigger_error(mysql_error($db_handle->conn), E_USER_ERROR);
@@ -27,6 +27,10 @@ if (!empty($first_name) && !empty($last_name) && !empty($email) && !empty($phone
     $sql = "INSERT INTO `order` (`user_id`, `service_id`) VALUES ('$user_id', '$service_id')";
     mysqli_query($db_handle->conn, $sql) or trigger_error(mysql_error($db_handle->conn), E_USER_ERROR);
 
+    $success = 1;
+
+} else {
+    $success = 1;
 }
 
 mysqli_close($db_handle->conn);
@@ -52,6 +56,22 @@ mysqli_close($db_handle->conn);
     <div class="form-header">
         <a href="index.html" title="home">خانه</a>
     </div>
+
+    <?php
+        if ($success == 1) {
+    ?>
+
+    <div class="form-accepted">
+        درخواست شما با موفقیت ثبت شد!
+    </div>
+
+    <script>
+        setTimeout(function(){ window.location.href = "index.html"; }, 4000);
+    </script>
+
+    <?php
+        } else {
+    ?>
 
     <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post" class="form">
 
@@ -93,6 +113,10 @@ mysqli_close($db_handle->conn);
         </div>
 
     </form>
+
+    <?php
+        }
+    ?>
 
 </section>
 
