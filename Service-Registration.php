@@ -30,7 +30,7 @@ if (!empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST
     $success = 1;
 
 } else {
-    $success = 1;
+    $success = 0;
 }
 
 mysqli_close($db_handle->conn);
